@@ -16,43 +16,43 @@ body {
   background: #faf6ed;
   color: #222;
   -webkit-font-smoothing: antialiased;
-  display: grid;
+  display: grid; /* transformar em grid */
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
-.menu {
-  grid-column: 3 / 5;
-  margin-top: 2rem;
+.menu { 
+  grid-column: 3 / 5;    /* 5 colunas de grid */
+  margin-top: 2rem; /* unidade relativa do px ,equivale a 32px */
   margin-bottom: 2rem;
   background: #FB5;
 }
 
-.menu ul {
+.menu ul { /* utilizei flexbox para colocar um item ao lado do outro */
   display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
+  flex-wrap: wrap; /* quebra de itens */
+  padding: 10px; /* espaçamento */
 }
 
-.menu li a {
-  display: block;
+.menu li a {      /* estilizar os itens agora */
+  display: block;     
   padding: 10px;
   margin-right: 10px;
   color: #222;
-  text-decoration: none;
-  font-family: 'IBM Plex Mono', monospace;
+  text-decoration: none;    /* tirar sublinhado padrão */
+  font-family: 'IBM Plex Mono', monospace;  /* tipografia que baixei */
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: .1em;
+  text-transform: uppercase;   /* letras maisculas */
+  font-size: 0.875rem;      
+  letter-spacing: .1em;  /* espaçamento de letras */
 }
 
-.grid-section {
-  grid-column: 2 / 4;
-  width: 100%;
-  box-sizing: border-box;
+.grid-section {         /* classes que envolve as sections */
+  grid-column: 2 / 4;   /* pegar da linha 2 a linha 4 */
+  width: 100%; /* pegar o máx da section, expandir */
+  box-sizing: border-box;    /* acumular com o padding para não grudar no canto */
   padding: 10px;
-  display: grid;
-  grid-template-columns: 90px 300px 1fr;
+  display: grid; /* dentro do conteúdo do layout que será também grid */
+  grid-template-columns: 90px 300px 1fr;   /* 1coluna espaçamento, 2col o texto.. ,terceira  */
   grid-gap: 20px;
   margin-bottom: 4rem;
 }
@@ -75,7 +75,7 @@ body {
   color: #E54;
 }
 
-.animais h2::before {
+.cyber h2::before {
   content: '';
   display: inline-block;
   width: 40px;
@@ -84,37 +84,37 @@ body {
   background: #FB5;
 }
 
-.animais p {
+.cyber p {
   font-family: Helvetica, Arial;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
-.animais-lista {
+.cyber-lista {
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
 }
 
-.animais-lista::-webkit-scrollbar {
+.cyber-lista::-webkit-scrollbar {
   width: 18px;
 }
 
-.animais-lista::-webkit-scrollbar-thumb {
+.cyber-lista::-webkit-scrollbar-thumb {
   background: #FB5;
   border-left: 4px solid #faf6ed;
   border-right: 4px solid #faf6ed;
 }
 
-.animais-lista::-webkit-scrollbar-track {
+.cyber-lista::-webkit-scrollbar-track {
   background: #faf6ed;
 }
 
-.animais-descricao {
+.cyber-descricao {
   grid-column: 3;
 }
 
-.animais-descricao section {
+.cyber-descricao section {
   margin-bottom: 3rem;
 }
 
