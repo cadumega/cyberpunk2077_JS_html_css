@@ -59,15 +59,15 @@ body {
 
 .titulo {
   font-family: 'Playfair Display SC', georgia;
-  font-size: 6rem;
-  line-height: 1;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  grid-column: 1 / 4;
+  font-size: 6rem; /* 6*16 qd uso rem */
+  line-height: 1; /* sem altura de linha tão grande */
+  font-weight: 400; /* equivale ao normal */
+  margin-bottom: 1rem; 
+  grid-column: 1 / 4; /* começa na um e termina na 4 o o grid */
 }
 
-.animais h2 {
-  font-family: 'IBM Plex Mono', monospace;
+.cyber h2 {
+  font-family: 'IBM Plex Mono', monospace;  
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -84,10 +84,10 @@ body {
   background: #FB5;
 }
 
-.cyber p {
-  font-family: Helvetica, Arial;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+.cyber p {   
+  font-family: Helvetica, Arial;   /* tipografia */
+  line-height: 1.2;          
+  margin-bottom: 1rem;    /* diminuir o tamanho dos parágrafos */
 }
 
 .cyber-lista {
@@ -190,7 +190,7 @@ body {
     grid-template-columns: 100px 1fr;
     grid-gap: 10px;
   }
-  .animais-lista {
+  .cyber-lista {
     grid-column: 1;
   }
   .faq-lista, .dados, .mapa {
